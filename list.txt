@@ -1,0 +1,86 @@
+Frutas
+* Manzanas (different varieties: Crimson Snow, Golden, Golden-Red, Granny Smith, Pink Lady, Red, Red Delicious)
+* Albaricoque
+* Aguacate
+* Plátano (Yellow, Red, Lady Finger)
+* Moras
+* Arándano - Huckleberry
+* Cereza (different varieties, Rainier)
+* Cereza de cera (Yellow, Red, Black)
+* Clementina - Clementine
+* Coco - Cocos
+* Melón (2 varieties)
+* Melocotón - Peach (different varieties) 
+* Carambola
+* Cherimoya
+* Higo - Fig
+* Grosella - Goosberry
+* Granadilla
+* Uva - Grape (Blue, Pink, White (different varieties)) 
+* Pomelo - Grapefruit (Pink, White)
+* Guayaba - Guava
+* Cabalito de indias
+* Kiwi
+* Caqui
+* Kumquats
+* Limón - Lemon (normal, Meyer)
+* Lima - Lime
+* Litchi
+* Mandarina - Mandarine
+* Mango (Green, Red)
+* Mangostán
+* Maracuyá - Maracuja or Passion fruit
+* Melón Piel de Sapo - Melon Piel de Sapp
+* Mora
+* Nectarina - Nectarine  (Regular, Flat)
+* Naranja - Orange
+* Papaya
+* Fruta de la Pasión
+* Durazno (different varieties)
+* Pera - pear (different varieties: Abate, Forelle, Kaiser, Monster, Red, Stone, Williams)
+* Pitahaya Roja
+* Ciruela - Plum (different varieties)
+* Granada - Pomegranate
+* Piña - Pineapple (normal, Mini)
+* Pomelo dulce - Pomelo Sweetie
+* Rambutan
+* Frambuesa - Raspberry
+* Grosella roja - Redcurrant
+* Salak
+* Fresa - Strawberry (normal, Wedge)
+* Tamarillo
+* Tangelo
+* Sandía - Watermelon
+
+Verduras
+   * Frijoles
+   * Remolacha Roja
+   * Repollo
+   * Zanahoria
+   * Coliflor
+   * Pepino -  Cucumber (ripened, regular)
+   * Berenjena - Eggplant
+   * Raíz de Jengibre - Ginger Root
+   * Colinabo - Kohlrabi
+   * Cebolla - Onion  (Red, White)
+   * Pimiento - Pepper (Red, Green, Orange, Yellow)
+   * Papa (Red, Sweet, White)
+   * Tomate - tomato(different varieties, Maroon, Cherry Red, Yellow, not ripened, Heart)
+   * Calabacín - Zucchini  (green and dark)
+
+Frutos secos y semillas
+      * Semilla de Cajú
+      * Castaña - Chestnut
+      * Avellana - Hazelnut
+      * Pistacho
+      * Nuez - Walnut
+
+Otros
+         * Fruto del Cactus
+         * Patata - potato
+         * Pitahaya Roja - Pitahaya Red
+         * Granadilla
+         * Maíz (with husk)
+         * Dátiles - Dates
+         * Nueces - Nuts (Forest, Pecan)
+
