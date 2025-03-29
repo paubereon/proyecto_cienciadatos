@@ -811,16 +811,16 @@ if ingredientes_seleccionados:
         st.subheader(f"{receta_nombre}")
         st.write(f"URL de la imagen: {receta.get('imagen', 'No disponible')}")
 
-        # Verificar si la imagen existe antes de mostrarla
-        if receta.get("imagen"):  # Verifica si la clave "imagen" existe y no está vacía
-            st.image(receta["imagen"], caption=receta_nombre, use_container_width=True)
+        # Verificar si la clave 'imagen' existe y no es None o vacía
+        if isinstance(receta.get("imagen"), str) and receta["imagen"].strip():
+         st.image(receta["imagen"], caption=receta_nombre, use_container_width=True)
         else:
-            st.error(f"⚠️ No se encontró una imagen para {receta_nombre}")
-
+            st.warning(f"⚠️ No se encontró una imagen para {receta_nombre}")
         st.write(f"**Descripción:** {receta['descripcion']}")
         st.write("**Pasos:**")
         for i, paso in enumerate(receta["pasos"], start=1):
             st.write(f"**Paso {i}:** {paso}")
+
 
         # Mostrar ingredientes faltantes
         if receta["faltantes"]:
