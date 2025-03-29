@@ -11,6 +11,16 @@ import os
 import base64
 import io
 from PIL import Image 
+import gdown
+import os
+
+# URL del modelo en Google Drive (reemplaza TU_ID)
+url = "https://colab.research.google.com/drive/1kqetPwpCzO2tJxPoAfRRAvTLy8RynPf6?usp=sharing#scrollTo=oojrg-Qk647b"
+output = "fruit_detection_model.h5"
+
+# Descargar el modelo solo si no existe
+if not os.path.exists(output):
+    gdown.download(url, output, quiet=False)
 
 
 #Configuramos la página de Streamlit
