@@ -126,7 +126,7 @@ todas_las_recetas = {
     ]
 },
     "Tarta Tatín de manzana": {
-    "imagen": "https://th.bing.com/th/id/OIP.ptOGfaOTnHD8ecxubrtUOAHaE6?rs=1&pid=ImgDetMain",
+    "imagen": "https://imag.bonviveur.com/tarta-de-manzana.jpg",
     "descripcion": "La Tarta Tatín es una deliciosa tarta invertida, donde las manzanas caramelizadas son el centro de atención. Su combinación de dulce y ácido hace de esta receta un postre espectacular.",
     "ingredientes": ["Mantequilla", "Azúcar", "Masa quebrada", "Canela"],
     "pasos": [
