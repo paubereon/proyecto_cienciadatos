@@ -100,7 +100,7 @@ with open("frutas.txt", "r", encoding="utf-8") as file:
 # Diccionario de recetas con descripción y pasos
 todas_las_recetas = {
 "Tarta de manzana": {
-    "imagen": "Tarta de manzana.jpg",
+    "imagen": "https://th.bing.com/th/id/OIP.DlUn8ytvF4Yq5P4RBdlyvwHaFj?rs=1&pid=ImgDetMain",
     "descripcion": "¡Qué rica es esta receta de tarta de manzana! Con un interior suave y muy jugoso, esta tarta es toda una delicia. Tiene, además, la ventaja de que es un postre muy fácil de preparar, prácticamente solo hay que batir ingredientes y dejar que el horno trabaje para poder disfrutarla.",
     "ingredientes": ["Harina", "Azúcar", "Canela", "Huevos", "Mantequilla"],
     "pasos": [
@@ -620,7 +620,7 @@ todas_las_recetas = {
         ]
     },
     "Tarta de uva": {
-        "imagen": "URL_DE_LA_IMAGEN_AQUI",
+        "imagen": "https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/e970cad56b79bc96ac210119cca9ba4a.jpg",
         "descripcion": "Una deliciosa tarta con una base crujiente y el dulce sabor de las uvas.",
         "ingredientes": ["Harina", "Azúcar", "Mantequilla", "Huevos"],
         "pasos": [
@@ -669,7 +669,7 @@ todas_las_recetas = {
 },
 
       "Ensalada de kiwi": {
-        "imagen": "URL_DE_LA_IMAGEN_AQUI",
+        "imagen": "https://www.hola.com/horizon/landscape/c83439d951cf-ensalada-kiwi-adobe-t.jpg",
         "descripcion": "Una ensalada fresca con el toque ácido del kiwi.",
         "ingredientes": ["Menta", "Aceite de oliva"],
         "pasos": [
@@ -812,7 +812,7 @@ if ingredientes_seleccionados:
         # Mostrar detalles de la receta
         st.subheader(f"{receta_nombre}")
         st.write(f"URL de la imagen: {receta['imagen']}")
-        st.image(receta["imagen"], caption=receta_nombre, use_container_width=True)
+        st.image(receta["imagen"], caption=receta_nombre, use_column_width=True)
         st.write(f"**Descripción:** {receta['descripcion']}")
         st.write("**Pasos:**")
         for i, paso in enumerate(receta["pasos"], start=1):
