@@ -13,6 +13,8 @@ import io
 from PIL import Image 
 import gdown
 import os
+os.system("pip install gdown")
+import gdown
 
 # URL del modelo en Google Drive (reemplaza TU_ID)
 url = "https://colab.research.google.com/drive/1kqetPwpCzO2tJxPoAfRRAvTLy8RynPf6?usp=sharing#scrollTo=oojrg-Qk647b"
