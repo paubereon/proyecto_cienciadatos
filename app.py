@@ -10,8 +10,6 @@ from gtts import gTTS
 import os
 import base64
 import io
-from PIL import Image 
-
 
 #Configuramos la página de Streamlit
 import streamlit as st
@@ -811,8 +809,14 @@ if ingredientes_seleccionados:
 
         # Mostrar detalles de la receta
         st.subheader(f"{receta_nombre}")
-        st.write(f"URL de la imagen: {receta['imagen']}")
-        st.image(receta["imagen"], caption=receta_nombre, use_container_width=True)
+        st.write(f"URL de la imagen: {receta.get('imagen', 'No disponible')}")
+
+        # Verificar si la imagen existe antes de mostrarla
+        if receta.get("imagen"):  # Verifica si la clave "imagen" existe y no está vacía
+            st.image(receta["imagen"], caption=receta_nombre, use_container_width=True)
+        else:
+            st.error(f"⚠️ No se encontró una imagen para {receta_nombre}")
+
         st.write(f"**Descripción:** {receta['descripcion']}")
         st.write("**Pasos:**")
         for i, paso in enumerate(receta["pasos"], start=1):
