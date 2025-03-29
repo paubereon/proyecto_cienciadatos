@@ -31,11 +31,14 @@ hide_streamlit_style = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-# Cargar el modelo de detección de frutas
 @st.cache_resource
 def load_detection_model():
-    return tf.keras.models.load_model('./fruit_detection_model.h5')
+    model = tf.keras.models.load_model('./fruit_detection_model.h5')
+    st.write("✅ Modelo cargado correctamente")  # Mensaje de verificación
+    return model
 
+# Cargar el modelo
+model = load_detection_model()
 
 # Interfaz de usuario
 with st.sidebar:
@@ -75,7 +78,6 @@ uploaded_file = st.file_uploader("Sube una foto de un ingrediente", type=["jpg",
 if uploaded_file is not None:
     st.image(uploaded_file, caption="Foto del ingrediente", use_column_width=True)
 
-#al ssbir la foro me tiene que decir que es y como es la predicion
 # Cargar nombres de productos
 class_names = [line.strip() for line in open("./frutas.txt", "r", encoding="utf-8").readlines()]
 
