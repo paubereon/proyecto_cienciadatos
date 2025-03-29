@@ -64,7 +64,7 @@ El objetivo de este proyecto es permitir que el usuario capture o suba una foto 
 with st.container( border=True):
   st.subheader("PROYECTO GOOGLE COLAB")
   st.write(""" Enlace de los modelos de Redes Neuronales entrenados en Google Colab con las librerias
-        https://colab.research.google.com/drive/1kqetPwpCzO2tJxPoAfRRAvTLy8RynPf6?usp=sharing""")
+        https://colab.research.google.com/drive/1W3ROKwPQ9fVJZh2noxf-K3a19SwMkieD?usp=sharing""")
 
 # Poner un título más grande
 st.markdown("<h2 style='text-align: center;'>Sube una foto de un ingrediente</h2>", unsafe_allow_html=True)
@@ -811,6 +811,7 @@ if ingredientes_seleccionados:
 
         # Mostrar detalles de la receta
         st.subheader(f"{receta_nombre}")
+        st.write(f"URL de la imagen: {receta['imagen']}")
         st.image(receta["imagen"], caption=receta_nombre, use_container_width=True)
         st.write(f"**Descripción:** {receta['descripcion']}")
         st.write("**Pasos:**")
@@ -829,7 +830,7 @@ if ingredientes_seleccionados:
             st.rerun()
 
         # Botón para leer la receta
-        if st.button(f"📖 Leer la receta de {receta_nombre}"):
+        if st.button(f"📖 (Por favor espera unos minutos) Leer la receta de {receta_nombre}"):
             leer_receta(ingrediente, receta_nombre)
 
         # Si hay audio generado, mostrar reproductor
