@@ -31,14 +31,11 @@ hide_streamlit_style = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+# Cargar el modelo de detección de frutas
 @st.cache_resource
 def load_detection_model():
-    model = tf.keras.models.load_model('./fruit_detection_model.h5')
-    st.write("✅ Modelo cargado correctamente")  # Mensaje de verificación
-    return model
+    return tf.keras.models.load_model('./fruit_detection_model.h5')
 
-# Cargar el modelo
-model = load_detection_model()
 
 # Interfaz de usuario
 with st.sidebar:
