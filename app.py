@@ -10,6 +10,8 @@ from gtts import gTTS
 import os
 import base64
 import io
+from PIL import Image 
+
 
 #Configuramos la página de Streamlit
 import streamlit as st
@@ -98,7 +100,7 @@ with open("frutas.txt", "r", encoding="utf-8") as file:
 # Diccionario de recetas con descripción y pasos
 todas_las_recetas = {
 "Tarta de manzana": {
-    "imagen": "https://th.bing.com/th/id/OIP.DlUn8ytvF4Yq5P4RBdlyvwHaFj?rs=1&pid=ImgDetMain",
+    "imagen": "Tarta de manzana.jpg",
     "descripcion": "¡Qué rica es esta receta de tarta de manzana! Con un interior suave y muy jugoso, esta tarta es toda una delicia. Tiene, además, la ventaja de que es un postre muy fácil de preparar, prácticamente solo hay que batir ingredientes y dejar que el horno trabaje para poder disfrutarla.",
     "ingredientes": ["Harina", "Azúcar", "Canela", "Huevos", "Mantequilla"],
     "pasos": [
@@ -124,7 +126,7 @@ todas_las_recetas = {
     ]
 },
     "Tarta Tatín de manzana": {
-    "imagen": "https://imag.bonviveur.com/tarta-de-manzana.jpg",
+    "imagen": "https://th.bing.com/th/id/OIP.ptOGfaOTnHD8ecxubrtUOAHaE6?rs=1&pid=ImgDetMain",
     "descripcion": "La Tarta Tatín es una deliciosa tarta invertida, donde las manzanas caramelizadas son el centro de atención. Su combinación de dulce y ácido hace de esta receta un postre espectacular.",
     "ingredientes": ["Mantequilla", "Azúcar", "Masa quebrada", "Canela"],
     "pasos": [
@@ -809,18 +811,12 @@ if ingredientes_seleccionados:
 
         # Mostrar detalles de la receta
         st.subheader(f"{receta_nombre}")
-        st.write(f"URL de la imagen: {receta.get('imagen', 'No disponible')}")
-
-        # Verificar si la clave 'imagen' existe y no es None o vacía
-        if isinstance(receta.get("imagen"), str) and receta["imagen"].strip():
-         st.image(receta["imagen"], caption=receta_nombre, use_container_width=True)
-        else:
-            st.warning(f"⚠️ No se encontró una imagen para {receta_nombre}")
+        st.write(f"URL de la imagen: {receta['imagen']}")
+        st.image(receta["imagen"], caption=receta_nombre, use_container_width=True)
         st.write(f"**Descripción:** {receta['descripcion']}")
         st.write("**Pasos:**")
         for i, paso in enumerate(receta["pasos"], start=1):
             st.write(f"**Paso {i}:** {paso}")
-
 
         # Mostrar ingredientes faltantes
         if receta["faltantes"]:
