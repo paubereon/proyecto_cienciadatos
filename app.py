@@ -780,6 +780,9 @@ def sugerir_recetas(ingredientes_disponibles):
         }
     return recetas_sugeridas
 
+# Poner un título más grande
+st.markdown("<h2 style='text-align: center;'>Selecciona los ingredientes disponibles</h2>", unsafe_allow_html=True)
+
 # Obtener recetas según ingredientes seleccionados
 ingredientes_seleccionados = st.multiselect("Selecciona los ingredientes disponibles:", list(ingrediente_a_receta.keys()))
 recetas_sugeridas = sugerir_recetas(ingredientes_seleccionados)
